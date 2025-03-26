@@ -38,7 +38,10 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-    return NULL;
+    if (list == NULL || list->head == NULL) return NULL;
+    list->current = list->head;
+
+    return list->current->data; //esto para retornar el dato del primer nodo 
 }
 
 void * nextList(List * list) {
