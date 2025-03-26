@@ -34,7 +34,7 @@ List * createList() {
     newLista->head = NULL;
     newLista->tail = NULL;
     newLista->current = NULL; 
-    return NULL;
+    return newLista;
 }
 
 void * firstList(List * list) {
